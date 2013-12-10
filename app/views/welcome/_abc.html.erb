@@ -1,0 +1,11 @@
+<div class="container">
+<div class="span9 banner">
+    <%= yield %>
+</div>
+<h1>Profile</h1>
+<div>Name :<%=current_user.name%></div>
+<div>Email :<%=current_user.email%></div>
+
+<div><%= image_tag current_user.avatar.url%></div>
+
+</div>

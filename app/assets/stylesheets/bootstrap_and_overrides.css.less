@@ -1,0 +1,95 @@
+@import "twitter/bootstrap/bootstrap";
+body {padding-top: 6%;}
+@import "twitter/bootstrap/responsive";
+
+// Set the correct sprite paths
+@iconSpritePath: image-url("twitter/bootstrap/glyphicons-halflings.png");
+@iconWhiteSpritePath: image-url("twitter/bootstrap/glyphicons-halflings-white.png");
+
+// Set the Font Awesome (Font Awesome is default. You can disable by commenting below lines)
+@fontAwesomeEotPath: asset-url("fontawesome-webfont.eot");
+@fontAwesomeEotPath_iefix: asset-url("fontawesome-webfont.eot?#iefix");
+@fontAwesomeWoffPath: asset-url("fontawesome-webfont.woff");
+@fontAwesomeTtfPath: asset-url("fontawesome-webfont.ttf");
+@fontAwesomeSvgPath: asset-url("fontawesome-webfont.svg#fontawesomeregular");
+
+// Font Awesome
+@import "fontawesome/font-awesome";
+
+// Glyphicons
+//@import "twitter/bootstrap/sprites.less";
+
+// Your custom LESS stylesheets goes here
+//
+// Since bootstrap was imported above you have access to its mixins which
+// you may use and inherit here
+//
+// If you'd like to override bootstrap's own variables, you can do so here as well
+// See http://twitter.github.com/bootstrap/customize.html#variables for their names and documentation
+//
+// Example:
+// @linkColor: #ff0000;
+body{background: url(bg4.jpg);
+    }
+.navbar-inner
+{
+    background:url(bg4.jpg);
+    border: 2px solid #7F7F7F;
+    padding : 1%;
+}
+.navbar .nav > li > a {
+    color: #003D3D;
+    float: none;
+    padding: 5px;
+    font-size: 15px;
+    text-decoration: none;
+}	
+.navbar .nav > li > a:hover {
+    color: #FFFFFF;
+}
+.navbar .nav > li > a {
+    text-shadow: 0 1px 0 ;
+}
+p {
+    margin: 0;
+}
+
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+    
+    height: 30px;
+    
+}
+
+.span12 {
+    width: 100%;
+}
+
+li{
+    display: inline-block;
+    padding: 5px 10px;
+}
+#footer {
+         background-color: #003D3D;
+           height: 40px;
+           width: 100%;
+           text-align: center;
+        }
+
+.modal {
+    background-clip: padding-box;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    left: 22%;
+    outline: medium none;
+    position: fixed;
+
+}
+
+.modal-body {
+    max-height: 500px;
+    overflow-y: auto;
+    padding: 3px;
+    position: relative;
+}
